@@ -1,6 +1,6 @@
 import React from 'react';
 import useMeals from '../../hooks/useMeals';
-import deals from '../../images/Image/chef-cook-food-33614.png';
+import deals from '../../images/Image/deals.jpg';
 import ProductCard from '../ProductCard/ProductCard';
 
 const Deals = () => {
@@ -9,9 +9,13 @@ const Deals = () => {
   return (
     <div className="my-4 mx-8">
       <div className="grid grid-cols-3 gap-4">
-        <div className="relative">
-          <img src={deals} alt="" className="opacity-50 h-full" />
-          <h2 className="text-8xl font-medium absolute top-28 left-2 text-green-500">
+        <div className="relative overflow-hidden ">
+          <img
+            src={deals}
+            alt=""
+            className="opacity-75 h-full rounded transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-110"
+          />
+          <h2 className="text-8xl font-medium absolute top-10 left-2 text-gray-800">
             Deals
             <br />
             of the <br />
