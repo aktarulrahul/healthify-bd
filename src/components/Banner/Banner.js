@@ -1,7 +1,7 @@
 import React from 'react';
 import './Banner.css';
 
-const Banner = ({ img, title, sub, btn, placeholder }) => {
+const Banner = ({ img, title, sub, btn, placeholder, animation }) => {
   return (
     <div className="m-4 hbd-banner-bg rounded-lg flex justify-between items-center px-6">
       <div>
@@ -19,11 +19,7 @@ const Banner = ({ img, title, sub, btn, placeholder }) => {
         </div>
       </div>
       <div>
-        <img
-          className="transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-110 pl-4 h-full"
-          src={img}
-          alt={title}
-        />
+        <img className={animation} src={img} alt={title} />
       </div>
     </div>
   );
