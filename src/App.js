@@ -1,10 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './pages/Home/Home';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <>
-      <h2 className="text-7xl text-center">App JS</h2>
+      <Header />
+      <Home />
+      <Footer />
     </>
   );
 }
