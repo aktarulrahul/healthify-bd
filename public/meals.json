@@ -1,0 +1,200 @@
+[
+  {
+    "key": "b-1",
+    "category": "breakfast",
+    "name": "Bagel and cream cheese",
+    "oldPrice": 9.99,
+    "newPrice": 6.99,
+    "deals": false,
+    "star": 4,
+    "starCount": 245,
+    "img": "https://i.ibb.co/bPWvhKj/breakfast1.png"
+  },
+  {
+    "key": "b-6",
+    "category": "breakfast",
+    "name": "Fried Egg Toast Brunch",
+    "oldPrice": 25.99,
+    "newPrice": 19.99,
+    "deals": false,
+    "star": 4.2,
+    "starCount": 245,
+    "img": "https://i.ibb.co/bPWvhKj/breakfast6.png"
+  },
+  {
+    "key": "b-2",
+    "category": "breakfast",
+    "name": "sandwich",
+    "oldPrice": 10.99,
+    "newPrice": 7.99,
+    "deals": false,
+    "star": 4.3,
+    "starCount": 292,
+    "img": "https://i.ibb.co/bPWvhKj/breakfast2.png"
+  },
+  {
+    "key": "b-3",
+    "category": "breakfast",
+    "name": "Baked Chicken",
+    "oldPrice": 12.99,
+    "newPrice": 10.99,
+    "deals": true,
+    "star": 5,
+    "starCount": 275,
+    "img": "https://i.ibb.co/bPWvhKj/breakfast3.png"
+  },
+  {
+    "key": "b-4",
+    "category": "breakfast",
+    "name": "Eggs Benedict",
+    "oldPrice": 14.99,
+    "newPrice": 19.99,
+    "deals": false,
+    "star": 4.8,
+    "starCount": 247,
+    "img": "https://i.ibb.co/bPWvhKj/breakfast4.png"
+  },
+  {
+    "key": "b-5",
+    "category": "breakfast",
+    "name": "Toast Croissant Friend Egg",
+    "oldPrice": 17.99,
+    "newPrice": 22.99,
+    "deals": true,
+    "star": 4.5,
+    "starCount": 532,
+    "img": "https://i.ibb.co/bPWvhKj/breakfast5.png"
+  },
+  {
+    "key": "l-1",
+    "category": "lunch",
+    "name": "Healthy Plan",
+    "oldPrice": 9.99,
+    "newPrice": 6.99,
+    "deals": false,
+    "star": 4,
+    "starCount": 245,
+    "img": "https://i.ibb.co/bPWvhKj/lunch1.png"
+  },
+  {
+    "key": "l-6",
+    "category": "lunch",
+    "name": "Honey Soy Glazed Salmon with Peppers",
+    "oldPrice": 25.99,
+    "newPrice": 19.99,
+    "deals": false,
+    "star": 4.2,
+    "starCount": 245,
+    "img": "https://i.ibb.co/bPWvhKj/lunch6.png"
+  },
+  {
+    "key": "l-2",
+    "category": "lunch",
+    "name": "Fried Chicken Bento",
+    "oldPrice": 10.99,
+    "newPrice": 7.99,
+    "deals": true,
+    "star": 4.3,
+    "starCount": 292,
+    "img": "https://i.ibb.co/bPWvhKj/lunch2.png"
+  },
+  {
+    "key": "l-3",
+    "category": "lunch",
+    "name": "Rubbed Salmon",
+    "oldPrice": "12.99",
+    "newPrice": "10.99",
+    "deals": false,
+    "star": 5,
+    "starCount": 275,
+    "img": "https://i.ibb.co/bPWvhKj/lunch3.png"
+  },
+  {
+    "key": "l-4",
+    "category": "lunch",
+    "name": "Indian Lunch",
+    "oldPrice": 14.99,
+    "newPrice": 19.99,
+    "deals": true,
+    "star": 4.8,
+    "starCount": 247,
+    "img": "https://i.ibb.co/bPWvhKj/lunch4.png"
+  },
+  {
+    "key": "l-5",
+    "category": "lunch",
+    "name": "Beef Steak",
+    "oldPrice": 17.99,
+    "newPrice": 22.99,
+    "deals": false,
+    "star": 4.5,
+    "starCount": 532,
+    "img": "https://i.ibb.co/bPWvhKj/lunch5.png"
+  },
+  {
+    "key": "d-1",
+    "category": "dinner",
+    "name": "Salmon with Grapefruit and Lentil Salad",
+    "oldPrice": 9.99,
+    "newPrice": 6.99,
+    "deals": false,
+    "star": 4,
+    "starCount": 245,
+    "img": "https://i.ibb.co/bPWvhKj/dinner1.png"
+  },
+  {
+    "key": "d-6",
+    "category": "dinner",
+    "name": "Baked Chicken",
+    "oldPrice": 25.99,
+    "newPrice": 19.99,
+    "deals": false,
+    "star": 4.2,
+    "starCount": 245,
+    "img": "https://i.ibb.co/bPWvhKj/dinner6.png"
+  },
+  {
+    "key": "d-2",
+    "category": "dinner",
+    "name": "Lemony Salmon Piccata",
+    "oldPrice": 10.99,
+    "newPrice": 7.99,
+    "deals": false,
+    "star": 4.3,
+    "starCount": 292,
+    "img": "https://i.ibb.co/bPWvhKj/dinner2.png"
+  },
+  {
+    "key": "d-3",
+    "category": "dinner",
+    "name": "Pork Tenderloin with Quinoa Pilaf",
+    "oldPrice": 12.99,
+    "newPrice": 10.99,
+    "deals": true,
+    "star": 5,
+    "starCount": 275,
+    "img": "https://i.ibb.co/bPWvhKj/dinner3.png"
+  },
+  {
+    "key": "d-4",
+    "category": "dinner",
+    "name": "French Fries with cheese",
+    "oldPrice": 14.99,
+    "newPrice": 19.99,
+    "deals": false,
+    "star": 4.8,
+    "starCount": 247,
+    "img": "https://i.ibb.co/bPWvhKj/dinner4.png"
+  },
+  {
+    "key": "d-5",
+    "category": "dinner",
+    "name": "Garlic Butter Baked Salmon",
+    "oldPrice": 17.99,
+    "newPrice": 22.99,
+    "deals": true,
+    "star": 4.5,
+    "starCount": 532,
+    "img": "https://i.ibb.co/bPWvhKj/dinner5.png"
+  }
+]

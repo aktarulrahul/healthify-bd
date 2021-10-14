@@ -3,8 +3,8 @@ import Banner from '../../components/Banner/Banner';
 import Deals from '../../components/Deals/Deals';
 import ProductContainer from '../../components/ProductContainer/ProductContainer';
 import WhyUs from '../../components/WhyUS/WhyUs';
-import banner from '../../images/Image/banner.png';
-import subscribe from '../../images/Image/subs.png';
+import subscribe from '../../images/Image/banner.png';
+import banner from '../../images/Image/subs.png';
 
 const Home = () => {
   return (
