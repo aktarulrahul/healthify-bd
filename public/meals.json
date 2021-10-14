@@ -19,7 +19,7 @@
     "deals": false,
     "star": 4.2,
     "starCount": 245,
-    "img": "https://i.ibb.co/bPWvhKj/breakfast6.png"
+    "img": "https://i.ibb.co/Q6B0SD9/breakfast6.png"
   },
   {
     "key": "b-2",
@@ -30,7 +30,7 @@
     "deals": false,
     "star": 4.3,
     "starCount": 292,
-    "img": "https://i.ibb.co/bPWvhKj/breakfast2.png"
+    "img": "https://i.ibb.co/pXs5sNR/breakfast2.png"
   },
   {
     "key": "b-3",
@@ -41,29 +41,29 @@
     "deals": true,
     "star": 5,
     "starCount": 275,
-    "img": "https://i.ibb.co/bPWvhKj/breakfast3.png"
+    "img": "https://i.ibb.co/hVZf1GY/breakfast3.png"
   },
   {
     "key": "b-4",
     "category": "breakfast",
     "name": "Eggs Benedict",
-    "oldPrice": 14.99,
-    "newPrice": 19.99,
+    "oldPrice": 19.99,
+    "newPrice": 14.99,
     "deals": false,
     "star": 4.8,
     "starCount": 247,
-    "img": "https://i.ibb.co/bPWvhKj/breakfast4.png"
+    "img": "https://i.ibb.co/0hLdvcT/breakfast4.png"
   },
   {
     "key": "b-5",
     "category": "breakfast",
     "name": "Toast Croissant Friend Egg",
-    "oldPrice": 17.99,
-    "newPrice": 22.99,
+    "oldPrice": 22.99,
+    "newPrice": 17.99,
     "deals": true,
     "star": 4.5,
     "starCount": 532,
-    "img": "https://i.ibb.co/bPWvhKj/breakfast5.png"
+    "img": "https://i.ibb.co/xCnN9Zy/breakfast5.png"
   },
   {
     "key": "l-1",
@@ -74,7 +74,7 @@
     "deals": false,
     "star": 4,
     "starCount": 245,
-    "img": "https://i.ibb.co/bPWvhKj/lunch1.png"
+    "img": "https://i.ibb.co/F0D7Cc1/lunch1.png"
   },
   {
     "key": "l-6",
@@ -85,7 +85,7 @@
     "deals": false,
     "star": 4.2,
     "starCount": 245,
-    "img": "https://i.ibb.co/bPWvhKj/lunch6.png"
+    "img": "https://i.ibb.co/Mhk4G9N/lunch6.png"
   },
   {
     "key": "l-2",
@@ -96,7 +96,7 @@
     "deals": true,
     "star": 4.3,
     "starCount": 292,
-    "img": "https://i.ibb.co/bPWvhKj/lunch2.png"
+    "img": "https://i.ibb.co/28jJTPc/lunch2.png"
   },
   {
     "key": "l-3",
@@ -107,29 +107,29 @@
     "deals": false,
     "star": 5,
     "starCount": 275,
-    "img": "https://i.ibb.co/bPWvhKj/lunch3.png"
+    "img": "https://i.ibb.co/F8zXZT9/lunch3.png"
   },
   {
     "key": "l-4",
     "category": "lunch",
     "name": "Indian Lunch",
-    "oldPrice": 14.99,
-    "newPrice": 19.99,
+    "oldPrice": 19.99,
+    "newPrice": 14.99,
     "deals": true,
     "star": 4.8,
     "starCount": 247,
-    "img": "https://i.ibb.co/bPWvhKj/lunch4.png"
+    "img": "https://i.ibb.co/nzGTJgD/lunch4.png"
   },
   {
     "key": "l-5",
     "category": "lunch",
     "name": "Beef Steak",
-    "oldPrice": 17.99,
-    "newPrice": 22.99,
+    "oldPrice": 22.99,
+    "newPrice": 17.99,
     "deals": false,
     "star": 4.5,
     "starCount": 532,
-    "img": "https://i.ibb.co/bPWvhKj/lunch5.png"
+    "img": "https://i.ibb.co/dcx9ZHq/lunch5.png"
   },
   {
     "key": "d-1",
@@ -140,7 +140,7 @@
     "deals": false,
     "star": 4,
     "starCount": 245,
-    "img": "https://i.ibb.co/bPWvhKj/dinner1.png"
+    "img": "https://i.ibb.co/dMfp0np/dinner1.png"
   },
   {
     "key": "d-6",
@@ -151,7 +151,7 @@
     "deals": false,
     "star": 4.2,
     "starCount": 245,
-    "img": "https://i.ibb.co/bPWvhKj/dinner6.png"
+    "img": "https://i.ibb.co/zN8kTqJ/dinner6.png"
   },
   {
     "key": "d-2",
@@ -162,7 +162,7 @@
     "deals": false,
     "star": 4.3,
     "starCount": 292,
-    "img": "https://i.ibb.co/bPWvhKj/dinner2.png"
+    "img": "https://i.ibb.co/RcdBXJb/dinner2.png"
   },
   {
     "key": "d-3",
@@ -173,28 +173,28 @@
     "deals": true,
     "star": 5,
     "starCount": 275,
-    "img": "https://i.ibb.co/bPWvhKj/dinner3.png"
+    "img": "https://i.ibb.co/09mp3nT/dinner3.png"
   },
   {
     "key": "d-4",
     "category": "dinner",
     "name": "French Fries with cheese",
-    "oldPrice": 14.99,
-    "newPrice": 19.99,
+    "oldPrice": 19.99,
+    "newPrice": 14.99,
     "deals": false,
     "star": 4.8,
     "starCount": 247,
-    "img": "https://i.ibb.co/bPWvhKj/dinner4.png"
+    "img": "https://i.ibb.co/k9QyLQ9/dinner4.png"
   },
   {
     "key": "d-5",
     "category": "dinner",
     "name": "Garlic Butter Baked Salmon",
-    "oldPrice": 17.99,
-    "newPrice": 22.99,
+    "oldPrice": 22.99,
+    "newPrice": 17.99,
     "deals": true,
     "star": 4.5,
     "starCount": 532,
-    "img": "https://i.ibb.co/bPWvhKj/dinner5.png"
+    "img": "https://i.ibb.co/JpMzk3c/dinner5.png"
   }
 ]

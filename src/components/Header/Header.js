@@ -12,12 +12,12 @@ const Header = () => {
             className="w-11/12 "
             placeholder="Search for items..."
           />
-          <i class="fas fa-search px-2 text-green-400"></i>
+          <i className="fas fa-search px-2 text-green-400"></i>
         </div>
         <div className="flex-1 px-2">
           <div className="flex items-center justify-around">
             <div className="flex items-center ">
-              <i class="fas fa-shopping-cart px-2 text-2xl"></i>
+              <i className="fas fa-shopping-cart px-2 text-2xl"></i>
               <p className="text-gray-500">Cart</p>
             </div>
             <div className="flex items-center">
