@@ -1,5 +1,7 @@
 import React from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../images/logo/logo.png';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -16,17 +18,47 @@ const Header = () => {
         </div>
         <div className="flex-1 px-2">
           <div className="flex items-center justify-around">
+            <div className="flex items-center text-gray-500">
+              <NavLink
+                to="/Home"
+                activeStyle={{
+                  fontWeight: 'bold',
+                  backgroundColor: '#34d399',
+                  color: '#fff',
+                  borderRadius: '20px',
+                  padding: '4px 10px',
+                }}
+              >
+                Home
+              </NavLink>
+            </div>
+            <div className="flex items-center text-gray-500">
+              <NavLink
+                to="/login"
+                activeStyle={{
+                  fontWeight: 'bold',
+                  backgroundColor: '#34d399',
+                  color: '#fff',
+                  borderRadius: '20px',
+                  padding: '4px 8px',
+                }}
+              >
+                Login
+              </NavLink>
+            </div>
+            <div className="flex items-center text-white px-4 py-2 rounded-full bg-red-500">
+              <NavLink
+                to="/signup"
+                activeStyle={{
+                  fontWeight: 'bold',
+                }}
+              >
+                Sign Up
+              </NavLink>
+            </div>
             <div className="flex items-center ">
               <i className="fas fa-shopping-cart px-2 text-2xl"></i>
               <p className="text-gray-500">Cart</p>
-            </div>
-            <div className="flex items-center">
-              <button className="text-gray-500">Login</button>
-            </div>
-            <div className="flex items-center">
-              <button className="text-white px-4 py-2 rounded-full bg-red-500">
-                Sign Up
-              </button>
             </div>
             <div>
               <p className="text-2xl text-green-400 font-medium">1900-888</p>

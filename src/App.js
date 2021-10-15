@@ -9,8 +9,11 @@ import Login from './pages/Login/Login';
 import Signup from './pages/Signup/Signup';
 import MealDetails from './pages/MealDetails/MealDetails';
 import NotFound from './pages/NotFound/NotFound';
+import useMeals from './hooks/useMeals';
 
 function App() {
+  const [user] = useMeals();
+  console.log('app', user);
   return (
     <>
       <BrowserRouter>

@@ -3,7 +3,7 @@ import './Banner.css';
 
 const Banner = ({ img, title, sub, btn, placeholder, animation }) => {
   return (
-    <div className="m-4 hbd-banner-bg rounded-lg flex justify-between items-center px-6">
+    <div className="m-4 hbd-banner-bg rounded-lg flex-none md:flex justify-between items-center px-6">
       <div>
         <h1 className="text-5xl mb-3 font-extrabold text-gray-800">{title}</h1>
         <p className="text-gray-500 text-3xl mb-5">{sub}</p>

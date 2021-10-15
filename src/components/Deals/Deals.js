@@ -8,7 +8,7 @@ const Deals = () => {
   const mealDeal = meals.filter((meal) => meal.deals === true);
   return (
     <div className="my-4 mx-8">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
         <div className="relative overflow-hidden ">
           <img
             src={deals}

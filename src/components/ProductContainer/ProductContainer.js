@@ -4,10 +4,11 @@ import useMeals from '../../hooks/useMeals';
 
 const ProductContainer = () => {
   const [meals] = useMeals();
+  // console.log(meals);
   const breakfastMeal = meals.filter((meal) => meal.category === 'breakfast');
   const lunchMeal = meals.filter((meal) => meal.category === 'lunch');
   const dinnerMeal = meals.filter((meal) => meal.category === 'dinner');
-  const [displayMeals, setDisplayMeals] = useState(breakfastMeal);
+  const [displayMeals, setDisplayMeals] = useState([]);
   const handleDisplayMeals = (category) => {
     if (category === 'dinner') {
       setDisplayMeals(dinnerMeal);
@@ -27,9 +28,13 @@ const ProductContainer = () => {
         <button onClick={() => handleDisplayMeals('dinner')}>Dinner</button>
       </div>
       <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-        {displayMeals.map((meal) => (
-          <ProductCard key={meal.key} meal={meal} />
-        ))}
+        {displayMeals.length === 0
+          ? breakfastMeal.map((meal) => (
+              <ProductCard key={meal.key} meal={meal} />
+            ))
+          : displayMeals.map((meal) => (
+              <ProductCard key={meal.key} meal={meal} />
+            ))}
       </div>
     </div>
   );

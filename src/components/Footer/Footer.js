@@ -5,7 +5,7 @@ import logo from '../../images/logo/logo.png';
 const Footer = () => {
   return (
     <div className="my-4 mx-8">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-4">
         <div>
           <img src={logo} className="w-3/4" alt="" />
           <p>Best Food Waiting for your belly</p>

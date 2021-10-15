@@ -1,10 +1,15 @@
 import React from 'react';
 import './ProductCard.css';
 import Rating from 'react-rating';
+import { useHistory } from 'react-router';
 
 const ProductCard = ({ meal }) => {
-  const { category, name, oldPrice, newPrice, deals, star, starCount, img } =
+  const { category, name, oldPrice, newPrice, key, star, starCount, img } =
     meal;
+  const history = useHistory();
+  const handleDetails = () => {
+    history.push(`/${category}/${key}`);
+  };
   return (
     <div className="p-3  border-gray-400 rounded border shadow-lg">
       <small className="bg-red-300 text-white p-3 rounded z-10">
@@ -30,6 +35,12 @@ const ProductCard = ({ meal }) => {
         <div className="flex justify-between px-4">
           <p className="text-green-400 p-2">${newPrice}</p>
           <p className="text-gray-400 p-2 line-through">${oldPrice}</p>
+          <button
+            onClick={handleDetails}
+            className="p-2 bg-green-100 text-green-500 rounded"
+          >
+            Deatils
+          </button>
           <button className="p-2 bg-green-100 text-green-500 rounded">
             <i className="fas fa-shopping-cart px-2 "></i>Add
           </button>
