@@ -1,15 +1,12 @@
 import React from 'react';
 import './ProductCard.css';
 import Rating from 'react-rating';
-import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const ProductCard = ({ meal }) => {
   const { category, name, oldPrice, newPrice, key, star, starCount, img } =
     meal;
-  const history = useHistory();
-  const handleDetails = () => {
-    history.push(`/${category}/${key}`);
-  };
+
   return (
     <div className="p-3 rounded shadow-lg transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-105">
       <small className="bg-red-500 text-white p-3 rounded z-10">
@@ -28,18 +25,21 @@ const ProductCard = ({ meal }) => {
           />{' '}
           <small className="text-gray-400">({starCount})</small>
         </div>
-        <div className="flex justify-between px-4">
-          <p className="text-green-400 p-2">${newPrice}</p>
-          <p className="text-gray-400 p-2 line-through">${oldPrice}</p>
-          <button
-            onClick={handleDetails}
-            className="p-2 bg-green-100 text-green-500 rounded"
-          >
-            Deatils
-          </button>
-          <button className="p-2 bg-green-100 text-green-500 rounded">
-            <i className="fas fa-shopping-cart px-2 "></i>Add
-          </button>
+        <div className="lg:flex justify-between px-4">
+          <div className="flex justify-between">
+            <p className="text-green-400 p-2">${newPrice}</p>
+            <p className="text-gray-400 p-2 line-through">${oldPrice}</p>
+          </div>
+          <div className="flex justify-between">
+            <Link to={`/meals/${key}`}>
+              <button className="p-2 bg-green-100 text-green-500 rounded mr-2">
+                Deatils
+              </button>
+            </Link>
+            <button className="p-2 bg-green-100 text-green-500 rounded ml-2">
+              <i className="fas fa-shopping-cart px-2 "></i>Add
+            </button>
+          </div>
         </div>
       </div>
     </div>

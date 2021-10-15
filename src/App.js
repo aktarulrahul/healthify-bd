@@ -10,42 +10,45 @@ import Signup from './pages/Signup/Signup';
 import MealDetails from './pages/MealDetails/MealDetails';
 import NotFound from './pages/NotFound/NotFound';
 import useMeals from './hooks/useMeals';
+import AuthProvider from './contexts/AuthProvider';
 
 function App() {
   const [user] = useMeals();
   console.log('app', user);
   return (
     <>
-      <BrowserRouter>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/home">
-            <Home />
-          </Route>
-          <Route path="/cart">
-            <Cart />
-          </Route>
-          <Route path="/shipping">
-            <Shipping />
-          </Route>
-          <Route path="/login">
-            <Login />
-          </Route>
-          <Route path="/signup">
-            <Signup />
-          </Route>
-          <Route path="/:category/:mealID">
-            <MealDetails />
-          </Route>
-          <Route path="*">
-            <NotFound />
-          </Route>
-        </Switch>
-        <Footer />
-      </BrowserRouter>
+      <AuthProvider>
+        <BrowserRouter>
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/home">
+              <Home />
+            </Route>
+            <Route path="/cart">
+              <Cart />
+            </Route>
+            <Route path="/shipping">
+              <Shipping />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/signup">
+              <Signup />
+            </Route>
+            <Route path="/meals/:mealID">
+              <MealDetails />
+            </Route>
+            <Route path="*">
+              <NotFound />
+            </Route>
+          </Switch>
+          <Footer />
+        </BrowserRouter>
+      </AuthProvider>
     </>
   );
 }

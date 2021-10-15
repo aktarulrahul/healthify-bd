@@ -20,7 +20,7 @@ const ProductContainer = () => {
   };
   return (
     <div className="mx-12 my-8">
-      <div className="mx-auto w-2/4 flex justify-around mb-8 border boder-greay-400 p-4 rounded">
+      <div className="mx-auto md:w-2/4 flex justify-around mb-8 border boder-greay-400 p-4 rounded">
         <button onClick={() => handleDisplayMeals('breakfast')}>
           Breakfast
         </button>

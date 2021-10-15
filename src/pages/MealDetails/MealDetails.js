@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import useMeals from '../../hooks/useMeals';
 
 const MealDetails = () => {
-  const { category, mealID } = useParams();
+  const { mealID } = useParams();
   const [meals, setMeals] = useState([]);
   useEffect(() => {
     fetch('./meals.json')
@@ -14,6 +14,7 @@ const MealDetails = () => {
   return (
     <div>
       <h2>{meals.length}</h2>
+      <h2>{mealID}</h2>
     </div>
   );
 };

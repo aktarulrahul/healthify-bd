@@ -7,7 +7,7 @@ const Banner = ({ img, title, sub, btn, placeholder, animation }) => {
       <div>
         <h1 className="text-5xl mb-3 font-extrabold text-gray-800">{title}</h1>
         <p className="text-gray-500 text-3xl mb-5">{sub}</p>
-        <div className="rounded-full bg-white flex justify-between">
+        <div className="rounded-full bg-white flex justify-between mb-10 ">
           <input
             className="rounded-full py-3 px-6 focus:outline-none focus:border-transparent"
             type="text"

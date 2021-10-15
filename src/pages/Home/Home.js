@@ -15,7 +15,7 @@ const Home = () => {
         sub="Save up to 50% on your first order"
         btn="Search"
         placeholder="Search"
-        animation="mx-auto w-1/2 animate-spin-slow"
+        animation="mx-auto sm:w-2/3 md:w-2/3 lg:w-1/2 animate-spin-slow"
       />
       <ProductContainer />
       <Deals />
