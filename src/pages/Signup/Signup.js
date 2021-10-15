@@ -1,9 +1,10 @@
 import React from 'react';
+import Form from '../../components/Form/Form';
 
 const Signup = () => {
   return (
-    <div>
-      <h2>Sign Up</h2>
+    <div className="login-bg py-4">
+      <Form type="signup" />
     </div>
   );
 };

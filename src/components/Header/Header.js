@@ -56,10 +56,12 @@ const Header = () => {
                 Sign Up
               </NavLink>
             </div>
-            <div className="flex items-center ">
-              <i className="fas fa-shopping-cart px-2 text-2xl"></i>
-              <p className="text-gray-500">Cart</p>
-            </div>
+            <NavLink to="/cart">
+              <div className="flex items-center ">
+                <i className="fas fa-shopping-cart px-2 text-2xl"></i>
+                <p className="text-gray-500">Cart</p>
+              </div>
+            </NavLink>
             <div>
               <p className="text-2xl text-green-400 font-medium">1900-888</p>
               <small className="text-gray-500">24/7 support Center</small>

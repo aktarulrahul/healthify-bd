@@ -11,15 +11,11 @@ const ProductCard = ({ meal }) => {
     history.push(`/${category}/${key}`);
   };
   return (
-    <div className="p-3  border-gray-400 rounded border shadow-lg">
-      <small className="bg-red-300 text-white p-3 rounded z-10">
+    <div className="p-3 rounded shadow-lg transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-105">
+      <small className="bg-red-500 text-white p-3 rounded z-10">
         Save {parseInt(((oldPrice - newPrice) / 100) * 100)}%
       </small>
-      <img
-        src={img}
-        alt=""
-        className="transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-105 mb-2 z-0"
-      />
+      <img src={img} alt="" className=" mb-2 z-0" />
       <div className="shadow-inner p-2">
         <small className="px-2 text-gray-500">{category}</small>
         <h2 className="px-2 font-medium mb-2">{name}</h2>
