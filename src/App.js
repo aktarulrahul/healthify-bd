@@ -1,4 +1,5 @@
 import './App.css';
+import React, { createContext } from 'react';
 import Home from './pages/Home/Home';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -11,12 +12,12 @@ import MealDetails from './pages/MealDetails/MealDetails';
 import NotFound from './pages/NotFound/NotFound';
 import useMeals from './hooks/useMeals';
 import AuthProvider from './contexts/AuthProvider';
-
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+export const mealsContext = createContext('mealsData');
 function App() {
-  const [user] = useMeals();
-  console.log('app', user);
+  const [meals] = useMeals();
   return (
-    <>
+    <mealsContext.Provider value={meals}>
       <AuthProvider>
         <BrowserRouter>
           <Header />
@@ -30,9 +31,9 @@ function App() {
             <Route path="/cart">
               <Cart />
             </Route>
-            <Route path="/shipping">
+            <PrivateRoute path="/shipping">
               <Shipping />
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Login />
             </Route>
@@ -49,7 +50,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </AuthProvider>
-    </>
+    </mealsContext.Provider>
   );
 }
 

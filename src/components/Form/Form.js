@@ -4,7 +4,7 @@ import logo from '../../images/logo/logo.png';
 
 const Form = ({ type, signInUsingGoogle, signInUsingGithub }) => {
   return (
-    <div className="md:w-1/3 px-2 bg-green-50 rounded shadow-lg mx-auto">
+    <div className="lg:w-1/3 md:w-2/3 px-2 bg-green-50 rounded shadow-lg mx-auto">
       <img src={logo} className="w-full mx-auto mb-5" alt="" />
       <form>
         {type === 'login' ? (
