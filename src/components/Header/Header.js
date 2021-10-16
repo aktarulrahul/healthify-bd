@@ -1,15 +1,19 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import useCart from '../../hooks/useCart';
 import logo from '../../images/logo/logo.png';
 import './Header.css';
 
 const Header = () => {
   const { user, logOut } = useAuth();
+  const [cartItems, setCartItems] = useCart();
   return (
     <div className="md:sticky top-0 z-10 bg-green-50">
       <div className="m-2 lg:flex lg:h-14 lg:items-center sm:mx-auto">
-        <img className="px-4 h-14 lg:w-2/12 mx-auto" src={logo} alt="" />
+        <NavLink to="/">
+          <img className="px-4 h-14 lg:w-2/12 mx-auto" src={logo} alt="" />
+        </NavLink>
         <div className="px-4 py-2 ml-4 flex-1 mb-2 text-center">
           <input
             type="text"
@@ -37,8 +41,12 @@ const Header = () => {
               </div>
               <NavLink to="/cart">
                 <div className="flex items-center ">
-                  <i className="fas fa-shopping-cart px-2 text-2xl"></i>
-                  <p className="text-gray-500">Cart</p>
+                  <i className="fas fa-shopping-cart px-2 text-2xl relative">
+                    <span className="absolute right-0 top-0 bg-green-400 px-1 rounded-full text-sm text-white">
+                      18
+                    </span>
+                  </i>
+                  <p className="text-gray-500 pl-2">Cart</p>
                 </div>
               </NavLink>
             </div>

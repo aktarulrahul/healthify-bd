@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 import useMeals from '../../hooks/useMeals';
+import useCart from '../../hooks/useCart';
 
 const ProductContainer = () => {
   const [meals] = useMeals();
+
   // console.log(meals);
   const breakfastMeal = meals.filter((meal) => meal.category === 'breakfast');
   const lunchMeal = meals.filter((meal) => meal.category === 'lunch');
@@ -18,6 +20,7 @@ const ProductContainer = () => {
       setDisplayMeals(breakfastMeal);
     }
   };
+
   return (
     <div className="mx-12 my-8">
       <div className="mx-auto md:w-2/4 flex justify-around mb-8 border boder-greay-400 p-4 rounded">

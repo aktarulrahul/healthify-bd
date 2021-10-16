@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import logo from '../../images/logo/logo.png';
 const Shipping = () => {
@@ -44,12 +45,14 @@ const Shipping = () => {
             className="border border-gray-400 rounded p-2 bg-gray-100 w-full mb-3"
           ></textarea>
           <br />
-          <button
-            type="submit"
-            className="border border-green-400 rounded p-2 bg-green-400 w-full mb-3 text-white"
-          >
-            Place Order
-          </button>
+          <Link to="/home">
+            <button
+              type="submit"
+              className="border border-green-400 rounded p-2 bg-green-400 w-full mb-3 text-white"
+            >
+              Place Order
+            </button>
+          </Link>
         </form>
       </div>
     </div>
