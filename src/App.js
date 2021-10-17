@@ -14,6 +14,7 @@ import useMeals from './hooks/useMeals';
 import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 export const mealsContext = createContext('mealsData');
+export const cartContext = createContext('cartState');
 function App() {
   const [meals] = useMeals();
   return (

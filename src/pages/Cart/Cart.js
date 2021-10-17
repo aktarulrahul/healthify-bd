@@ -1,12 +1,16 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { mealsContext } from '../../App';
+// import { cartContext } from '../../App';
+// import { mealsContext } from '../../App';
 import CartItem from '../../components/CartItem/CartItem';
 // import useCart from '../../hooks/useCart';
 
 const Cart = () => {
   // const [cartItems, setCartItems] = useCart();
   const cartItems = useContext(mealsContext);
+  // const cartItemContext = useContext(cartContext);
+  const locatCart = JSON.parse(localStorage.getItem('hbd-cart'));
   const Total = cartItems.reduce((total, item) => total + item.newPrice, 0);
   const subTotal = parseFloat(Total).toFixed(2);
   const tax = subTotal * 0.15;
@@ -15,8 +19,10 @@ const Cart = () => {
   return (
     <div className="my-3 md:grid md:grid-cols-3 md:gap-4">
       <div className="col-span-2 mx-auto mb-3">
-        <h2 className="text-2xl font-medium mb-3 mx-10">Product Details</h2>
-        {cartItems.map((item) => (
+        <h2 className="text-2xl font-medium mb-3 mx-10">
+          Product Details {locatCart?.length}
+        </h2>
+        {locatCart.map((item) => (
           <CartItem key={item.key} item={item} />
         ))}
       </div>
@@ -25,7 +31,7 @@ const Cart = () => {
         <table className="table-auto ">
           <tbody>
             <tr>
-              <td>Sub Total * {cartItems.length} Item</td>
+              <td>Sub Total * {locatCart.length} Item</td>
               <td>${subTotal}</td>
             </tr>
             <tr>

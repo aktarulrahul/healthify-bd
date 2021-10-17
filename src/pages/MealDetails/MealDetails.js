@@ -9,9 +9,9 @@ const MealDetails = () => {
   const mealDetail = meals.find((meal) => meal.key === mealID);
   const handleQuantity = (q) => {
     if (q === 'n' && quantity > 0) {
-      setQuantity(quantity - 1);
+      setQuantity((quantity) => quantity - 1);
     } else {
-      setQuantity(quantity + 1);
+      setQuantity((quantity) => quantity + 1);
     }
   };
   return (

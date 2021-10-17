@@ -2,29 +2,11 @@ import React from 'react';
 import './ProductCard.css';
 import Rating from 'react-rating';
 import { Link } from 'react-router-dom';
-import useCart from '../../hooks/useCart';
 
-const ProductCard = ({ meal }) => {
+const ProductCard = ({ meal, handleAddToCart }) => {
   const { category, name, oldPrice, newPrice, key, star, starCount, img } =
     meal;
-  const [cartItems, setCartItems] = useCart();
 
-  const handleAddToCart = (meal) => {
-    let addedMealsToCart = [...cartItems];
-    const existMeal = addedMealsToCart.find((ml) => ml.key === meal.key);
-    // console.log('existMeal', existMeal);
-    if (existMeal !== undefined) {
-      console.log('update Quantity');
-      const newQuantity = existMeal.quantity + 1;
-      existMeal.quantity = newQuantity;
-      setCartItems(addedMealsToCart);
-    } else {
-      console.log('Add New Item to cartItems');
-      const updateCartItemWithUniqueItem = [...addedMealsToCart, meal];
-      console.log('updateCartItemWithUniqueItem', updateCartItemWithUniqueItem);
-      setCartItems(updateCartItemWithUniqueItem);
-    }
-  };
   return (
     <div className="p-3 rounded shadow-lg transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-105">
       <small className="bg-red-500 text-white p-3 rounded z-10">

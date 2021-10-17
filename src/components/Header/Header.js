@@ -1,13 +1,12 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import useCart from '../../hooks/useCart';
 import logo from '../../images/logo/logo.png';
 import './Header.css';
 
 const Header = () => {
   const { user, logOut } = useAuth();
-  const [cartItems, setCartItems] = useCart();
+  const locatCart = JSON.parse(localStorage.getItem('hbd-cart'));
   return (
     <div className="md:sticky top-0 z-10 bg-green-50">
       <div className="m-2 lg:flex lg:h-14 lg:items-center sm:mx-auto">
@@ -43,7 +42,7 @@ const Header = () => {
                 <div className="flex items-center ">
                   <i className="fas fa-shopping-cart px-2 text-2xl relative">
                     <span className="absolute right-0 top-0 bg-green-400 px-1 rounded-full text-sm text-white">
-                      18
+                      {locatCart.length}
                     </span>
                   </i>
                   <p className="text-gray-500 pl-2">Cart</p>
