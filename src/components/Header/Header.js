@@ -9,8 +9,8 @@ const Header = () => {
   const { user, logOut } = useAuth();
   const locatCart = JSON.parse(localStorage.getItem('hbd-cart'));
   return (
-    <div className="md:sticky top-0 z-10 bg-green-400 mb-4 p-2 xl:px-4">
-      <div className="m-2 lg:flex lg:h-14 lg:items-center lg:justify-between md:justify-around text-white text-center">
+    <div className="md:sticky top-0 z-10 bg-green-100 mb-4 p-2 xl:px-4">
+      <div className="m-2 lg:flex lg:h-14 lg:items-center lg:justify-between md:justify-around text-green-400 text-center">
         <NavLink to="/">
           <img src={logo} className="w-2/3 md:w-2/5 md:mx-3 mx-auto" alt="" />
         </NavLink>
@@ -74,14 +74,23 @@ const Header = () => {
         </div>
 
         <div className="flex md:justify-center justify-between items-center my-2 mx-3">
-          <NavLink to="/cart">
+          <NavLink
+            to="/cart"
+            activeStyle={{
+              fontWeight: 'bold',
+              backgroundColor: '#fff',
+              color: '#fff',
+              borderRadius: '20px',
+              padding: '4px 10px',
+            }}
+          >
             <div className="flex items-center w-1/3">
-              <i className="fas fa-shopping-cart px-2 text-2xl relative text-white">
-                <span className="absolute right-0 top-0 bg-white px-1 rounded-full text-sm text-green-500">
+              <i className="fas fa-shopping-cart px-2 text-2xl relative text-green-400">
+                <span className="absolute right-0 top-0 bg-green-400 px-1 rounded-full text-sm text-white">
                   {locatCart.length}
                 </span>
               </i>
-              <p className="text-white pl-2">Cart</p>
+              <p className="text-green-400 pl-2">Cart</p>
             </div>
           </NavLink>
           <div className="w-2/3 ml-3">
@@ -95,13 +104,13 @@ const Header = () => {
                 <p className="mx-2">{user.displayName}</p>
                 <button
                   onClick={logOut}
-                  className="text-green-500 px-4 py-2 rounded-full bg-white"
+                  className="text-white px-4 py-2 rounded-full bg-green-400"
                 >
                   Logout
                 </button>
               </div>
             ) : (
-              <div className="text-green-500 px-10 py-2 rounded-full bg-white mx-auto">
+              <div className="text-white px-10 py-2 rounded-full bg-green-400 mx-auto">
                 <NavLink
                   to="/sign-in-up"
                   activeStyle={{
