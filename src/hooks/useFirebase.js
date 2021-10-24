@@ -5,6 +5,11 @@ import {
   signOut,
   onAuthStateChanged,
   GithubAuthProvider,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  sendEmailVerification,
+  sendPasswordResetEmail,
+  updateProfile,
 } from 'firebase/auth';
 import { useEffect, useState } from 'react';
 import firebaseInitialize from '../firebase/initialize.firebase';
@@ -13,6 +18,7 @@ firebaseInitialize();
 
 const useFirebase = () => {
   const [user, setUser] = useState({});
+  const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const auth = getAuth();
   const signInUsingGoogle = () => {
@@ -27,8 +33,34 @@ const useFirebase = () => {
     return signInWithPopup(auth, githubProvider);
   };
 
+  const signUpUsingEmailPassowrd = (email, password) => {
+    setError('');
+    return createUserWithEmailAndPassword(auth, email, password);
+  };
+  const signInUsingEmailPassowrd = (email, password) => {
+    setError('');
+    return signInWithEmailAndPassword(auth, email, password);
+  };
+
+  const verifyEmail = () => {
+    sendEmailVerification(auth.currentUser);
+  };
+
+  const restPassword = (email) => {
+    setError('');
+    sendPasswordResetEmail(auth, email)
+      .then((result) => setError('Email Send'))
+      .catch((err) => setError(err.message));
+  };
+  const updateName = (name) => {
+    updateProfile(auth.currentUser, { displayName: name })
+      .then((result) => {})
+      .finally(() => setIsLoading(false));
+  };
+
   useEffect(() => {
     const unsubscribed = onAuthStateChanged(auth, (user) => {
+      setIsLoading(true);
       if (user) {
         setUser(user);
       } else {
@@ -52,8 +84,15 @@ const useFirebase = () => {
     isLoading,
     setIsLoading,
     signInUsingGoogle,
-    logOut,
     signInUsingGithub,
+    logOut,
+    signUpUsingEmailPassowrd,
+    signInUsingEmailPassowrd,
+    error,
+    setError,
+    verifyEmail,
+    restPassword,
+    updateName,
   };
 };
 

@@ -5,6 +5,7 @@ import ProductContainer from '../../components/ProductContainer/ProductContainer
 import WhyUs from '../../components/WhyUS/WhyUs';
 import banner from '../../images/Image/banner.png';
 import subscribe from '../../images/Image/subs.png';
+import Faq from '../../components/Faq/Faq';
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       />
       <ProductContainer />
       <Deals />
+      <Faq />
       <Banner
         img={subscribe}
         title="Stay home & get your food"
