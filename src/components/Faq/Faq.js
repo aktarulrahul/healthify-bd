@@ -20,7 +20,7 @@ const Faq = () => {
         </p>
         <Tabs>
           <TabList>
-            <div className="flex flex-center mb-5 flex-wrap mx-auto">
+            <div className="flex justify-center mb-5 flex-wrap mx-auto">
               <Tab className="my-3 mx-2 text-xl border rounded shadow-lg px-3 py-2 transition duration-500 ease-in-out transform hover:scale-110 cursor-pointer">
                 FAQ 1
               </Tab>

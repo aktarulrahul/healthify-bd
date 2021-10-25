@@ -13,7 +13,7 @@ const Deals = () => {
           <img
             src={deals}
             alt=""
-            className="opacity-75 h-full rounded transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-110"
+            className="opacity-75 md:h-full rounded transition duration-500 ease-in-out transform  hover:-translate-y-1 hover:scale-110"
           />
           <h2 className="text-8xl font-medium absolute top-10 left-2 text-gray-800">
             Deals
